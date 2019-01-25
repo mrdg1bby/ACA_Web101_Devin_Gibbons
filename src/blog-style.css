@@ -13,9 +13,10 @@ h2:hover{
     color:white;
 }
 .profilepic img {
-    size: 100px;
-    background-color:#aaa;
-    padding:15px;
+  height: 100px;
+  width: 50px;
+  background-color:#aaa;
+  padding:15px;
 }
 .pic img {
     background-color: #aaa;
