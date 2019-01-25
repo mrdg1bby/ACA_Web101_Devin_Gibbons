@@ -1,0 +1,58 @@
+h2:hover{
+    color:chartreuse;
+  }
+  h5:hover{
+    color:gold;
+  }
+.header {
+    padding: 30px;
+    font-size: 50px;
+    letter-spacing: 25px;
+    text-align: center;
+    background: black;
+    color:white;
+}
+.profilepic img {
+    size: 100px;
+    background-color:#aaa;
+    padding:15px;
+}
+.pic img {
+    background-color: #aaa;
+  width: 100%;
+  padding: 15px;
+  size: 75px;
+}
+
+.leftcolumn { 
+  float: left;
+  width: 50%;
+  padding-right:40px;
+}
+
+.rightcolumn {
+  float: right;
+  width: 25%;
+  padding-left: 40px;
+  padding-right:10px;
+}
+  
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background:black;
+  margin-top: 20px;
+  color:white;
+}
