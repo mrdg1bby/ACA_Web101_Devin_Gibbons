@@ -1,9 +1,16 @@
+@font-face{
+    font-family:'monkeyfont';
+    src:url('/src/about/monkey.ttf');
+}
+
+
 h1{
     text-align:center;
-    font-family: monospace;
+    font-family:'monkeyfont';
+    letter-spacing:20px; 
     font-size: 100px;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 nav{
@@ -13,4 +20,54 @@ nav{
 body{
     text-align: center;
     margin-top: 5px;
+}
+
+footer{
+    font-family:'monkeyfont';
+    font-size: 23px;
+    letter-spacing: 5px;
+}
+
+.far{
+    padding: 40px;
+}
+
+.fab {
+    padding: 40px;
+}
+
+@media (max-width:800px){
+
+    h1{
+        letter-spacing: 1px;
+    }
+    footer{
+        font-family:'monkeyfont';
+        font-size: 23px;
+        letter-spacing: 1px;
+    }
+
+}
+
+
+@media (max-width:400px){
+
+    h1{
+        letter-spacing: 1px;
+    }
+
+    .far{
+        padding: 15px;
+    }
+    
+    .fab {
+        padding: 15px;
+    }
+
+    footer{
+        font-family:'monkeyfont';
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
 }
