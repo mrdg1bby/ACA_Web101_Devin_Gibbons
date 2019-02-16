@@ -1,12 +1,12 @@
 @font-face{
-    font-family:'monkeyfont';
-    src:url('/src/about/monkey.ttf');
+    font-family: monkeyfont;
+    src:url('./src/about/monkey.ttf');
 }
 
 
 h1{
     text-align:center;
-    font-family:'monkeyfont';
+    font-family: monkeyfont;
     letter-spacing:20px; 
     font-size: 100px;
     margin-top: 15px;
@@ -14,7 +14,7 @@ h1{
 }
 
 div{
-    font-family:'monkeyfont';
+    font-family:monkeyfont;
 }
 
 nav{
@@ -27,7 +27,7 @@ body{
 }
 
 footer{
-    font-family:'monkeyfont';
+    font-family:monkeyfont;
     font-size: 23px;
     letter-spacing: 5px;
 }
@@ -46,7 +46,7 @@ footer{
         letter-spacing: 1px;
     }
     footer{
-        font-family:'monkeyfont';
+        font-family:monkeyfont;
         font-size: 23px;
         letter-spacing: 1px;
     }
@@ -69,7 +69,7 @@ footer{
     }
 
     footer{
-        font-family:'monkeyfont';
+        font-family:monkeyfont;
         font-size: 15px;
         letter-spacing: 1px;
     }
