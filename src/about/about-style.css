@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'miss_monkeymedium';
-    src: url('../src/about/miss_monkey-webfont.ttf') format('ttf');
-    src: url('../src/about/miss_monkey-webfont.woff2') format('woff2'),
-         url('../src/about/miss_monkey-webfont.woff') format('woff');
+    src: url('./src/about/miss_monkey-webfont.ttf') format('ttf');
+    src: url('./src/about/miss_monkey-webfont.woff2') format('woff2'),
+         url('./src/about/miss_monkey-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
