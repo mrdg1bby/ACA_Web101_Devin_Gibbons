@@ -1,6 +1,6 @@
 @font-face {
 	font-family: monkeyfont;
-	src: url(/src/about/monkey.ttf);
+	src: url(./src/about/monkey.ttf);
 }
 
 h1{
