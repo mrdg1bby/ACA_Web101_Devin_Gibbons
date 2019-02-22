@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+}
+
+.sq{
+    height:50px;
+    width: 50px;
+    clear: both;
+    margin: 10px auto;
+}
+
+
+.sq.Red {
+    border:2px Solid red; 
+    transition: 1s,1s;
+    transition-delay: .1s;
+}
+.container:hover .sq.Red{
+    height: 100px;
+    width: 100px;
+    border-radius:100%;
+    transform: translate(50px) rotate(360deg);   
+}
+
+
+.sq.RedOrange{
+    border:2px solid orangered;
+    transition: 1s,1s; 
+    transition-delay:.2s;
+}
+.container:hover .sq.RedOrange{
+    height:25px;
+    width:25px;
+    border-radius:100%;
+    transform: translate(-50px) rotate(360deg);  
+}
+
+
+.sq.Orange{
+    border:2px solid orange;
+    transition:1s,1s;
+    transition-delay: .3s;
+}
+.container:hover .sq.Orange{
+    height:100px;
+    width:100px;
+    border-radius:100%;
+    transform: translate(100px) rotate(360deg);   
+}
+
+
+.sq.YellowOrange{
+    border:2px solid rgb(255, 217, 0);
+    transition:1s,1s;
+    transition-delay: .4s;
+}
+.container:hover .sq.YellowOrange{
+    height:25px;
+    width:25px;
+    border-radius:100%;
+    transform: translate(-100px) rotate(360deg);
+}
+
+
+.sq.Yellow{
+    border:2px solid yellow;
+    transition:1s,1s;
+    transition-delay: .5s;
+}
+.container:hover .sq.Yellow{
+    height:100px;
+    width:100px;
+    border-radius:100%;
+    transform: translate(150px) rotate(360deg);
+}
+
+
+.sq.YellowGreen{
+    border: 2px solid yellowgreen;
+    transition: 1s,1s;
+    transition-delay: .6s;
+}
+.container:hover .sq.YellowGreen{
+    height:50px;
+    width:50px;
+    border-radius:100%;
+    transform: translate(-150px) rotate(360deg);
+}
+
+
+.sq.Green{
+    border:2px solid green;
+    transition: 1s,1s;
+    transition-delay: .7s;
+}
+.container:hover .sq.Green{
+    height:100px;
+    width:100px;
+    border-radius:100%;
+    transform: translate(200px) rotate(360deg);
+}
+
+
+.sq.BlueGreen{
+    border:2px solid rgb(4, 212, 178);
+    transition:1s,1s;
+    transition-delay: .8s;
+}
+.container:hover .sq.BlueGreen{
+    height:50px;
+    width:50px;
+    border-radius:100%;
+    transform: translate(-200px) rotate(360deg);
+}
+
+
+.sq.Blue{
+    border:2px solid blue;
+    transition:1s,1s;
+    transition-delay: .9s;
+}
+.container:hover .Blue{
+    height:100px;
+    width:100px;
+    border-radius:100%;
+    transform: translate(250px) rotate(360deg);
+}
+
+
+.sq.BlueViolet{
+    border:2px solid blueviolet;
+    transition:1s,1s;
+    transition-delay: .10s;
+}
+.container:hover .sq.BlueViolet{
+    height:50px;
+    width:50px;
+    border-radius:100%;
+    transform: translate(-250px) rotate(360deg);
+}
+
+
+.sq.Violet{
+    border:2px solid purple;
+    transition:1s,1s;
+    transition-delay: .11s;
+}
+.container:hover .sq.Violet{
+    height:100px;
+    width:100px;
+    border-radius:100%;
+    transform: translate(300px) rotate(360deg);
+}
+
+
+.sq.Black{
+    border:2px solid black;
+    transition:1s,1s;
+    transition-delay: .24s;
+}
+.container:hover .sq.Black{
+    height:50px;
+    width:50px;
+    border-radius:100%;
+    transform: translate(-300px) rotate(360deg);
+}
