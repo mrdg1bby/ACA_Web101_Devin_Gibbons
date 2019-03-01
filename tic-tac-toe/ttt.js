@@ -1,64 +1,73 @@
- function startGame() {
-    document.turn="X"
+function startGame() {
 
-     setMessage(document.turn + "gets to start.");
+    for (var i = 1; i <= 9; i= i+1){
+        clearBox(i);
     }
 
-var msg = "X gets to start!"
+    document.turn = "X";
+    if (Math.random() < 0.5) {
+        document.turn = "O";
+    }
+    document.winner = null;
+    setMessage(document.turn + " gets to start.");
+}
 
-setMessage(msg);
-
-function setMessage(msg){
-    document.getElementById("messages").innerText=msg;
+function setMessage(msg) {
+    document.getElementById("message").innerText = msg;
 }
 
 function nextMove(square){
-    if (square.innetText =="") {
-    square.innerText = document.turn;
-    switchTurn();
-}   else {
+    if (document.winner != null){
+        setMessage(document.winner + " already won the game.");
+    } else if (square.innerText == ""){
+        square.innerText = document.turn;
+        switchTurn();
+    } else {
         setMessage("That square is already used.");
-}
+    }
 }
 
-function switchTurn(){
+function switchTurn() {
+
     if (checkForWinner(document.turn)) {
-        setMessage("Congratulations," + document.turn + "! You Win!");
-    }   else if (document.turn == "X")
-    if (document.turn == "X") {
+        setMessage("Congratulations, " + document.turn + "! You Won!");
+        document.winner = document.turn;
+    } else if (document.turn == "X") {
         document.turn = "O";
+        setMessage("It's " + document.turn + "'s turn!");
     } else{
         document.turn = "X";
+        setMessage("It's " + document.turn + "'s turn!");
     }
-
-    setMessage("It's" + document.turn + "'s turn!");
 }
-
-function checkForWinner(move){
-    var result = false;
-    if (checkRow(1,2,3,move) || 
-        checkRow(4,5,6,move) || 
-        checkRow(7,8,9,move) ||
-        checkRow(1,4,7,move) ||
-        checkRow(2,5,8,move) ||
-        checkRow(3,6,9,move) ||
-        checkRow(1,5,9,move) ||
-        checkRow(3,5,7,move)) {
-         
-        result = true;
+ function checkForWinner(move){
+     var result = false;
+     if (checkRow(1, 2, 3, move) ||
+         checkRow(4, 5, 6, move) ||
+         checkRow(7, 8, 9, move) ||
+         checkRow(1, 4, 7, move) ||
+         checkRow(2, 5, 8, move) ||
+         checkRow(3, 6, 9, move) ||
+         checkRow(1, 5, 9, move) ||
+         checkRow(3, 5, 7, move)) {
+         result = true;
         }
         return result;
-}
+ }
 
-function checkRow(a, b, c, move){
+function checkRow(a, b, c, move) {
     var result = false;
     if (getBox(a) == move && getBox(b) == move && getBox(c) == move){
         result = true;
     }
     return result;
-    
+
 }
 
 function getBox(number){
-    document.getElemenmtByID("s" + number).innerText;
+    document.getElementById("s" + number).innerText;
+}
+
+function clearBox(number) {
+    document.getElementById("s" + number).innerText = "";
 }
