@@ -1,0 +1,91 @@
+body{
+    background-color: black;
+    margin: auto;
+}
+.container{
+    display: grid;
+    grid-row: auto;
+    text-align: center;
+    
+    
+}
+.wrapper{
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+td {
+	border:  4px solid #333;
+	height:  130px;
+	width:  130px;
+	text-align:  center;
+	vertical-align:  middle;
+    font-family: 'Permanent Marker',cursive;
+    color: black;
+	font-size:  70px;
+	cursor: pointer;
+}
+
+table {
+    text-align: center; 
+    justify-content: center;
+    top: 50px;
+    background-color: chartreuse;
+} 
+
+table tr:first-child td {
+	border-top: 0;
+}
+
+table tr:last-child td {
+	border-bottom: 0;
+}
+
+table tr td:first-child {
+	border-left: 0;
+}
+
+table tr td:last-child {
+	border-right: 0;
+}
+
+.endgame {
+  display: none;
+  width: 200px;
+  top: 120px;
+  background-color: hotpink;
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  vertical-align: center;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-size: 2em;
+}
+
+.button{
+    text-align: center;
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+}
+
+header{
+    text-align: center;
+    font-size: 40px;
+    font-family:'Permanent Marker',cursive;
+    padding:0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+}
+
+
+@media (max-width:590px){
+    header{
+        font-size:20px;
+    }
+}
