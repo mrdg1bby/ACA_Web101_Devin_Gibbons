@@ -1,9 +1,27 @@
-*{
-    margin:0px;
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    margin:0,auto;
     
 }
 
-body {
+header{
+    text-align: center;
+    background-color: black;
+}
+h1{
+    font-size: 70px;
+    margin-top:0px; 
+    color: #FAB617;
+    letter-spacing: 52px;
+    font-family: 'Permanent Marker',cursive;
+    
+}
+
+#banner{
 background-color:#269;
 background-image: linear-gradient(white 2px, transparent 2px),
 linear-gradient(90deg, white 2px, transparent 2px),
@@ -14,32 +32,15 @@ background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
 text-align: center;
 align-items: center;
 display: flex;
-height: 100vh;
+height:70vh;
 justify-content: center;
-margin: 0 auto;
-}
-
-
-
-header{
-    padding-bottom:10px;
-    padding-top:2px;
-    
- 
+padding:0;
 }
 footer{
     background-color: black;
     padding:20px;
+    text-align: center;
  
-}
-
-
-h1{
-    font-size: 70px;
-    margin-top:0px; 
-    color: #FAB617;
-    letter-spacing: 52px;
-    font-family: 'Permanent Marker',cursive;
 }
 
 h4{
@@ -51,6 +52,9 @@ h4{
 
 button{
     font-size: 20px;
+    background-color: black;
+    border: none;
+    margin-left:10px;
     
 }
 button:active{
@@ -61,72 +65,74 @@ a{
     text-decoration: none;
     font-family: 'Permanent Marker', cursive;
     color: #AA00D4;
+    background-color: none;
     
 }
-
 
 img{
-    margin-bottom: 40px;
-    display:inline;
-    margin-top:10px;
-    cursor: url('/Click/cursor.png') ,crosshair;
-        
-    
+    width: 100%;
+    height:auto;
+    padding:20px;
+    margin:auto;
 }
-.triangle{
-    display:inline;
-}
+
 .triangle img{
-    cursor: auto;
+    width:70%;
+    height:auto;
 }
-header{
-    background-color:black;
+
+@media (max-width: 1000px){
+    h1{
+        letter-spacing: 20px;
+    }
 }
 
 @media (max-width: 770px){
-
-}
-
     h1{
-    font-size: 50px;
-    letter-spacing: 10px;
+        font-size: 50px;
+        letter-spacing: 10px;
+        }
+    .banner{
+        display:70vh;
     }
-
-
-.triangle {
-    display:none;
+  img{
+      padding:70px;
+  }
+    .triangle{
+        display:none;
+    }
 }
+
+
 
 @media (max-width: 420px){
-
-}
     h1{
     font-size: 40px;
     letter-spacing: 10px;
     }
-
-
-.triangle {
-    display:none;
+.triangle{
+    display: none;
+}
+.banner{
+    display:50vh;
 }
 
-@media (max-width: 360px){
-
 }
+
+
+
+@media (max-width: 375px){
     h1{
     font-size: 30px;
     letter-spacing: 10px;
     }
-
+.triangle{
+    display:none;
+}
     h4{
         font-size: 15px;
     }
-
-    img{
-        height:50%;
-    }
-
-
-.triangle {
-    display:none;
+.banner{
+    display:5%;
+}
 }

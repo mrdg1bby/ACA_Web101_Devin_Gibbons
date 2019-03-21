@@ -19,8 +19,12 @@ function Load(){
     document.getElementById('text').value=monstercount;   
 }
 
-var restartButton
-function restart(){
-document.location.href="";
-
+var restart;
+var that;
+function restart() {
+    var that = this;
+    var restartButton = document.getElementById( 'restart' );
+    eventUtility.addEvent(restartButton, 'click', function() {
+        that.init();
+    });
 }
