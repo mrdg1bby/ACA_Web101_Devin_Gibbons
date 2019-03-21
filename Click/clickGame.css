@@ -75,7 +75,7 @@ img{
     height:auto;
     padding:20px;
     margin:auto;
-    cursor: url(../Click/tsquare.png),crosshair;
+    cursor: url(./Click/tsquare.png),crosshair;
 }
 
 .triangle img{
