@@ -6,6 +6,7 @@
 body{
     margin:0,auto;
     
+    
 }
 
 header{
@@ -74,11 +75,13 @@ img{
     height:auto;
     padding:20px;
     margin:auto;
+    cursor: url(/Click/tsquare.png),crosshair;
 }
 
 .triangle img{
     width:70%;
     height:auto;
+    cursor: default;
 }
 
 @media (max-width: 1000px){
