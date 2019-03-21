@@ -1,0 +1,86 @@
+*{
+    margin:0px;
+    
+}
+
+body {
+background-color:#269;
+background-image: linear-gradient(white 2px, transparent 2px),
+linear-gradient(90deg, white 2px, transparent 2px),
+linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
+text-align: center;
+}
+
+.banner{
+    display:inline;
+    
+}
+
+header{
+    padding-bottom:10px;
+    padding-top:2px;
+}
+footer{
+    background-color: black;
+    padding:20px;
+ 
+}
+
+
+h1{
+    font-size: 70px;
+    margin-top:0px; 
+    color: #FAB617;
+    letter-spacing: 52px;
+    font-family: 'Permanent Marker',cursive;
+}
+
+h4{
+    display: inline;
+    color: #FAB617;
+    font-size: 30px;
+    
+}
+
+button{
+    font-size: 20px;
+    
+}
+button:active{
+    transform: translateY(4px);
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
+    color: #AA00D4;
+    
+}
+
+
+img{
+    margin-bottom: 40px;
+    margin-top:10px;
+    cursor: url('/Click/cursor.png') ,crosshair;
+    
+}
+.triangle{
+    display:inline;
+}
+.triangle img{
+    cursor: auto;
+}
+header{
+    background-color:black;
+}
+
+@media (max-width: 770px){
+
+    h1{
+    font-size: 50px;
+    letter-spacing: 10px;
+    }
+}
