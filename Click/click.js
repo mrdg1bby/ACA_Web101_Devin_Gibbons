@@ -6,6 +6,13 @@ function add(){
     monstercount=monstercount+1
 //changing text to add number for monsters
     document.getElementById('text').value=monstercount; 
+    var audio = document.getElementById("growl");
+if (audio.paused) {
+audio.play();
+}
+else {
+audio.currentTime = 0
+}
 }
 
 //save amount of monster rawrs in localstorage
