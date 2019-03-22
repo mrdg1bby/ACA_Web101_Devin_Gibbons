@@ -18,4 +18,8 @@ function Load(){
     monstercount=parseInt(monstercount);
     document.getElementById('text').value=monstercount;   
 }
-
+//reset game
+function restart(){
+    document.getElementById("text").value = "";
+    monstercount = 0;
+}
